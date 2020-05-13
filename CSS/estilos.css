@@ -1,0 +1,136 @@
+Soft reset do CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background:linear-gradient(#373B44,#4286f4);
+    background-size: cover;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Breakpoint para o site resposivo */
+
+@media (min-width: 400px) {
+    body {
+        font-size: 16px
+    }
+}
+@media (min-width: 600px) {
+    body {
+        font-size: 18px
+    }
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Ranchers', cursive;
+    font-size: 1.5em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 10em;
+}
+
+@media (min-width:550px){
+    .portfolio .grid {
+        grid-template-columns: 300px 300px
+    }
+}
+
+@media (min-width:880px){
+    .portfolio .grid {
+        grid-template-columns: repeat(3,300px);
+        justify-content: center;
+    }
+}
+
+.contato .grid {
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    justify-content: center;
+
+}
+
+.portfolio figure, .contato figure{
+    text-align: center;
+    line-height: 2em;
+}
+
+.portfolio figcaption{
+    font-size: 1.2em;
+    text-align: center;
+}
+.menu {
+    position: fixed;
+    width: 50vw;
+    top:0;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+    
+}
+
+.img-portfolio {
+    width: 220px;
+    height: 220px;
+}    
+
+.site-title, .site-subtitle {
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Ranchers', cursive;
+    text-shadow:black 7px 8px;
+    line-height: 0.2em;
+    
+}
+
+.site-subtitle {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.portfolio, .sobre, .contato{
+    padding: 2em;
+}
+.portfolio h2, .sobre h2, .contato h2{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    background-color: whitesmoke;
+    background-size: 200vw;
+}
+
+
