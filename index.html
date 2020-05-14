@@ -8,26 +8,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto&family=Titillium+Web:wght@700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f79ed2533e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        <div class = "titulo">
             <h1 class="site-title">Jackson Nascimento</h1>
-            <h2 class="site-subtitle">Jr Front-end Developer</h2>
-
+            <h2 class="site-subtitle">{ Jr Front-end Developer }</h2>
         </div>
     </header>
-
-    <section class="portfolio">
+    
+    <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
 
         <div class="grid">
@@ -46,23 +47,27 @@
         </div>
     </section>
 
-<section class="sobre">
+<section class="sobre" id="sobre">
     <h2>Sobre</h2>
 </section>
 
-<section class="contato">
-    <h2>Contato</h2>
+</section>
 
-    <div class="grid">
-        <figure>
-            <img class="img-contato" src="./imagens/linkedin.png" alt="linkedin">
-        </figure>
-        <figure>
-            <img class="img-contato" src="./imagens/email.png" alt="email">
-        </figure>
-        <figure>
-            <img class="img-contato" src="./imagens/github.png" alt="github">
-        </figure>
+<section class="contato" id="contato">
+    <h2>Contato</h2>
+     <div class="grid-icons">
+        <a target="_blank" href="https://github.com/jjacksoon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/jjacksoon1">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/jackson10/">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="jsnascimento1@hotmail.com">
+            <i class="fas fa-envelope-square"></i>
+        </a>
     </div>
 </section>
 </body>
