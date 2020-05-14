@@ -15,9 +15,10 @@ header {
 
 body {
     background:linear-gradient(#373B44,#4286f4);
-    background-size: cover;
+    background-size: 100vh;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    margin:0;
 }
 
 /* Breakpoint para o site resposivo */
@@ -44,14 +45,45 @@ a:hover {
     text-decoration: underline;
 }
 
+.contato a {
+    color: #02373A;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    transition: text-shadow 1s, text-decoration 1s;
+}
+
+.contato .grid-icons {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+    
+}
+
+
+@media (min-width: 450px){
+    .contato .grid-icons {
+    grid-template-columns: repeat(2,100px);
+    }
+}
+
+.contato a:active, 
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 20px #5BEFDC;
+}
+
 .portfolio .grid {
     display: grid;
     gap: 10em;
+    /* align-items: center; */
 }
 
 @media (min-width:550px){
     .portfolio .grid {
         grid-template-columns: 300px 300px
+    }
+    .contato .grid-icons {
+        grid-template-columns: repeat(4,100px);
     }
 }
 
@@ -62,14 +94,8 @@ a:hover {
     }
 }
 
-.contato .grid {
-    display: grid;
-    grid-template-columns: repeat(3,150px);
-    justify-content: center;
 
-}
-
-.portfolio figure, .contato figure{
+.portfolio figure {
     text-align: center;
     line-height: 2em;
 }
@@ -82,11 +108,18 @@ a:hover {
     position: fixed;
     width: 50vw;
     top:0;
+    z-index: 1;
 }
 
 .menu a{
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color, 1s;
+}
+
+.menu a:hover {
+    background-color: rgba(91,239,220,0.5);
+    color: black;
 }
 
 .menu ul {
@@ -101,7 +134,44 @@ a:hover {
 .img-portfolio {
     width: 220px;
     height: 220px;
+    object-fit: cover;
+    transition: transform 500ms;
 }    
+
+.img-portfolio:hover {
+    transform: scale(1.2) rotate(2deg)
+}
+
+.site-subtitle{
+    border-right: 2px solid rgb(255,255,255,.75);
+
+}
+
+
+.site-subtitle {
+    animation: linkCursor 500ms steps(40) infinite normal,
+    typing 8s steps(40) 1s normal both;
+}
+
+@keyframes linkCursor{
+    from{
+    border-right-color: rgba(255,255,255,.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to {
+        width: 12em;
+    }
+
+}
 
 .site-title, .site-subtitle {
     text-align: center;
@@ -119,11 +189,12 @@ a:hover {
 
 .site-subtitle {
     font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.portfolio, .sobre, .contato{
-    padding: 2em;
-}
 .portfolio h2, .sobre h2, .contato h2{
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
@@ -131,6 +202,12 @@ a:hover {
     font-size: 2em;
     background-color: whitesmoke;
     background-size: 200vw;
+    
 }
+
+.portfolio, .sobre, .contato {
+    min-height: 100vh;
+}
+
 
 
