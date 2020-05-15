@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
     <title>Jackson Nascimento</title>
     <link rel="icon" type="image/jpg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3M7NanuV0wSzro-13J6t_ghxYEsr29EONZsk7PQdfBxOKy4cH&usqp=CAU"/>
+
     <link rel="stylesheet" href="CSS/estilos.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto&family=Titillium+Web:wght@700&display=swap"
@@ -16,7 +18,7 @@
 
     <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -28,8 +30,8 @@
             <h2 class="site-subtitle">{ Jr Front-end Developer }</h2>
         </div>
     </header>
-    
-    <section class="portfolio" id="portfolio">
+
+    <section class="portfolio container" id="portfolio">
         <h2>Portfólio</h2>
 
         <div class="grid">
@@ -48,13 +50,21 @@
         </div>
     </section>
 
-<section class="sobre" id="sobre">
+<section class="sobre container">
     <h2>Sobre</h2>
+    <figure>
+        <img class="avatar" src="./imagens/bio.jpg" alt="Jackson Nascimento">
+    </figure>
+    <p>
+        Electrical Engineer and Graduating in Information Systems. Currently develops research and participates in projects in ​​Deep Learning, Computer Systems for recognizing the voice of individuals and detecting objects in real time. I am also an enthusiast and curious about JavaScript and Python and learning more and more about these two languages.
+    </p>
+    <p class="explicacao">
+       This website was built during the <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura.</a>
+    </p>
+  
 </section>
 
-</section>
-
-<section class="contato" id="contato">
+<section class="contato container" id="contato">
     <h2>Contato</h2>
      <div class="grid-icons">
         <a target="_blank" href="https://github.com/jjacksoon">
@@ -71,6 +81,14 @@
         </a>
     </div>
 </section>
+<div class = "fim">
+    <p class ="rodape">Desenvolvido por Jackson 2020</p>
+    <figure>
+        <a href="#top"><img class="fim-picture" src="./imagens/rodape.png" alt="Jackson Nascimento"></a>
+        
+    </figure>
+
+</div>
 </body>
 
 </html>
